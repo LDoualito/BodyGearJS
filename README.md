@@ -2,8 +2,9 @@
 
 Bienvenue sur **BodyGear**, votre tableau de bord personnel pour suivre vos entraînements, vos progrès et atteindre vos objectifs.
 
-** Lien en ligne du projet**
+**Lien en ligne du projet :**
 https://ldoual.fr/
+
 **Auteur :**
 - DOUAL Lucas
 
