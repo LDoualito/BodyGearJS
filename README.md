@@ -7,7 +7,7 @@ https://ldoual.fr/
 
 **Auteur :**
 - DOUAL Lucas
-- 
+  
 ## Fonctionnalités
 - **Authentification Sécurisée** : Inscription et connexion via Supabase.
 - **Gestion des Entraînements** : Ajoutez, modifiez et supprimez vos séances. Filtrez l'historique par activité.
