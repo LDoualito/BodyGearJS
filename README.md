@@ -2,12 +2,15 @@
 
 Bienvenue sur **BodyGear**, votre tableau de bord personnel pour suivre vos entraînements, vos progrès et atteindre vos objectifs.
 
+<<<<<<< HEAD
 **Lien en ligne du projet :**
 https://ldoual.fr/
 
 **Auteur :**
 - DOUAL Lucas
 
+=======
+>>>>>>> ab45e28 (Refactor: Add comments)
 ## Fonctionnalités
 - **Authentification Sécurisée** : Inscription et connexion via Supabase.
 - **Gestion des Entraînements** : Ajoutez, modifiez et supprimez vos séances. Filtrez l'historique par activité.
@@ -54,3 +57,8 @@ https://ldoual.fr/
   - `/components` : Web Components réutilisables (`auth-form`, `workout-list`, `chart-component`, etc.)
   - `/services` : Logique métier et appels API (`auth-service`, `workout-service`, etc.)
   - `style.css` : Styles globaux et variables CSS.
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ab45e28 (Refactor: Add comments)

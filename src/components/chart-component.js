@@ -68,7 +68,7 @@ export class ChartComponent extends HTMLElement {
 
         if (!workouts) return
 
-        // Group by type
+        // Group workouts by activity type for the pie chart
         const distribution = workouts.reduce((acc, curr) => {
             const type = curr.type.charAt(0).toUpperCase() + curr.type.slice(1)
             acc[type] = (acc[type] || 0) + 1

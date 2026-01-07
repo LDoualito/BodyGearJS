@@ -13,6 +13,7 @@ export const workoutService = {
     },
 
     calculateCalories(activityType, durationHours, weightKg) {
+        // MET formula: MET * Weight (kg) * Duration (hours)
         const met = this.MET_VALUES[activityType.toLowerCase()] || 1 // default to 1 if unknown
         return Math.round(met * weightKg * durationHours)
     },
