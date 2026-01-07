@@ -2,7 +2,7 @@
 
 Bienvenue sur **BodyGear**, votre tableau de bord personnel pour suivre vos entraînements, vos progrès et atteindre vos objectifs.
 
-**Binôme :**
+**Auteur :**
 - DOUAL Lucas
 
 ## Fonctionnalités
