@@ -1,0 +1,184 @@
+:root {
+  --font-family: 'Courier New', Courier, monospace;
+  /* Old school feel */
+  --line-height: 1.6;
+  --font-weight: 400;
+
+  /* Color Palette - BodyGear B&W */
+  --color-bg: #000000;
+  --color-surface: #111111;
+  --color-surface-hover: #222222;
+  --color-text: #ffffff;
+  --color-text-muted: #aaaaaa;
+
+  --color-primary: #ffffff;
+  --color-primary-hover: #dddddd;
+  --color-secondary: #888888;
+  --color-accent: #ffffff;
+  --color-success: #ffffff;
+  /* We stick to B&W, maybe use icons for status */
+  --color-danger: #ffffff;
+  --color-warning: #ffffff;
+
+  --radius-sm: 0px;
+  /* Sharp corners for old school */
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  --shadow-sm: none;
+  --shadow-md: 4px 4px 0px 0px rgba(255, 255, 255, 0.2);
+  --shadow-lg: 8px 8px 0px 0px rgba(255, 255, 255, 0.2);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: var(--line-height);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 10px solid var(--color-text);
+  /* Framed look */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-text);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: var(--color-text);
+  /* White background */
+  color: var(--color-bg);
+  /* Black text */
+  text-transform: uppercase;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.5);
+  /* Keep colors stable on hover for readability */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* .btn-primary removed to usage default button styles */
+
+input,
+select,
+textarea {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-surface-hover);
+  color: var(--color-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* Auth Component */
+.auth-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  border: 4px solid var(--color-text);
+}
+
+/* Workout Items */
+.workout-item {
+  border: 2px solid var(--color-surface-hover);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.workout-item:hover {
+  transform: translateX(5px);
+  border-color: var(--color-text);
+}
+
+/* Goals Progress Bars */
+.progress-bar-container {
+  background: var(--color-surface);
+  height: 15px;
+  border: 1px solid var(--color-text);
+  margin-top: 5px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--color-text);
+}
+
+/* Dashboard Grid adjustments */
+@media (max-width: 768px) {
+  .dashboard-view>div {
+    grid-template-columns: 1fr !important;
+  }
+}
