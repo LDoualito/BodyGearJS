@@ -3,8 +3,7 @@
 Bienvenue sur **BodyGear**, votre tableau de bord personnel pour suivre vos entraînements, vos progrès et atteindre vos objectifs.
 
 **Binôme :**
-- [VOTRE NOM ICI]
-- [NOM DE VOTRE BINÔME ICI]
+- DOUAL Lucas
 
 ## Fonctionnalités
 - **Authentification Sécurisée** : Inscription et connexion via Supabase.
